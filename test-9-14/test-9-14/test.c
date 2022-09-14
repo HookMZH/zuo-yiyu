@@ -1,16 +1,95 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
+//int main()
+//{
+//	{
+//		int a = 10
+//		printf("a=%d", a);// ok
+//	}
+//	printf("a=%d", a);// error
+//	return 0;
+//}
 int main()
 {
-	printf("%d\n", sizeof(char));//1 单位字节
-	printf("%d\n", sizeof(short));//2
-	printf("%d\n", sizeof(int));//4
-	printf("%d\n", sizeof(long));//4
-	printf("%d\n", sizeof(long long));//8
-	printf("%d\n", sizeof(float));//4
-	printf("%d\n", sizeof(double));//8
+	extern int g_val;//声明extern外部符号
+	printf("g_val=%d\n", g_val);
 	return 0;
 }
+//局部变量的生命周期是：进入作用域生命周期开始，出作用域生命周期结束
+//全局变量的生命周期是：整个程序的生命周期
+//int global = 2020;
+//void test()
+//{
+//	printf("test()--%d\n", global);
+//}
+//int main()
+//{
+//	test();
+//	printf("%d\n", global);
+//	return 0;
+//}
+//int main()
+//{
+//	int num = 0;//变量哪里能用，哪里就是它的作用域
+//	{ 
+//		printf("num=%d", num);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int num1 = 0;
+//		int num2 = 0;
+//		
+//		//输入数据-使用输入函数scanf
+//		scanf("%d%d", &num1, &num2);//取地址符号&
+//		int sum = 0;
+//		//C语言语法规定，变量要定义在当前代码块的最前边
+//			sum = num1 * num2;
+//			printf("sum=%d\n", sum);
+//	return 0;
+//}
+//int a = 10;
+//int main()
+//{
+//	{ int a = 10;
+//	}
+//	printf("%d\n", a);
+//
+//	return 0;
+//}
+//int a = 100;
+//int main()
+//{
+//	int a = 10;
+//	printf("%d\n", a);//局部变量和全局变量的名字建议不要相同-容易产生误会
+//	//当局部变量和全局变量的名字相同时，局部变量优先
+//	return 0;
+//}
+//int num2 = 20;//全局变量-定义在{}之外的变量
+//int main()
+//{
+//	int num1 = 10;//局部变量-定义在代码块{}内部的变量
+//	return 0;
+//}
+//int main()
+//{
+//	short age = 20;
+//	float weight = 95.6f;
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%d\n", sizeof(char));//1 单位字节
+//	printf("%d\n", sizeof(short));//2
+//	printf("%d\n", sizeof(int));//4
+//	printf("%d\n", sizeof(long));//4
+//	printf("%d\n", sizeof(long long));//8
+//	printf("%d\n", sizeof(float));//4
+//	printf("%d\n", sizeof(double));//8
+//	return 0;
+//}
 //计算机中的单位
 // bit -比特位  一个比特位存放一个二进制位
 //byte-字节     一个字节=八个比特位
