@@ -9,12 +9,12 @@
 //	printf("a=%d", a);// error
 //	return 0;
 //}
-int main()
-{
-	extern int g_val;//声明extern外部符号
-	printf("g_val=%d\n", g_val);
-	return 0;
-}
+//int main()
+//{
+//	extern int g_val;//声明extern外部符号
+//	printf("g_val=%d\n", g_val);
+//	return 0;
+//}
 //局部变量的生命周期是：进入作用域生命周期开始，出作用域生命周期结束
 //全局变量的生命周期是：整个程序的生命周期
 //int global = 2020;
@@ -36,19 +36,19 @@ int main()
 //	}
 //	return 0;
 //}
-//int main()
-//{
-//	int num1 = 0;
-//		int num2 = 0;
-//		
-//		//输入数据-使用输入函数scanf
-//		scanf("%d%d", &num1, &num2);//取地址符号&
-//		int sum = 0;
-//		//C语言语法规定，变量要定义在当前代码块的最前边
-//			sum = num1 * num2;
-//			printf("sum=%d\n", sum);
-//	return 0;
-//}
+int main()
+{
+	int num1 = 0;
+		int num2 = 0;
+		
+		//输入数据-使用输入函数scanf
+		scanf("%d%d", &num1, &num2);//取地址符号&
+		int sum = 0;
+		//C语言语法规定，变量要定义在当前代码块的最前边
+			sum = num1 * num2;
+			printf("sum=%d\n", sum);
+	return 0;
+}
 //int a = 10;
 //int main()
 //{
